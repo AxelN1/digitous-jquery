@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $("#exercise").click(function() {
-        $("#text").attr("float", "right");
-    });
+  $("#exercise").show(function () {
+    $("#text").css("float", "right");
+  });
 
 });

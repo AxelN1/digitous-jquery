@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $("#exercise").click(function() {
+    $("#exercise").show(function() {
         $("#text").css("font-size", "50px");
     });
     

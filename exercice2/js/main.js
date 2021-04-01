@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $("#exercise").click(function() {
+    $("#exercise").show(function() {
         $("#square").css("width", "500px");
     });
     
