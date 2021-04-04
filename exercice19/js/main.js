@@ -2,7 +2,7 @@ $(document).ready(function() {
     
     $("button").click(function() {
 
-        $("input[disabled='disabled']").focus();
+        $("input").attr("disabled", false);
 
     });
 
