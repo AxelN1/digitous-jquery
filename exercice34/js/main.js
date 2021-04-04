@@ -1,11 +1,11 @@
 $(document).ready(function () {
-
+    
     $("button").click(function () {
-
-        $("input").val(('https://restcountries.eu/rest/v2/name/') + (name))
+        
+        var country = $("input").val();
 
         $.ajax({
-            url: 'https://restcountries.eu/rest/v2/name/',
+            url: 'https://restcountries.eu/rest/v2/name/' + country,
             success: function (data, statuts, response) {
                 $("#country").html(data[0].name);
                 $("#capital").html(data[0].capital);
@@ -14,5 +14,5 @@ $(document).ready(function () {
         });
 
     });
-
+    
 });
